@@ -3,11 +3,22 @@
 <html>
 
 <head>
-    <title>VS CODE에서 JSP 동작시키기</title>
+    <title>메인 화면</title>
+    <style>
+        body{
+            background-image: url("img/back.png");
+            background-color: white;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
 </head>
 
 <body>
-    <h1> test.jsp 페이지입니다.</h1>
+    <img src= "img/logo.png" width="200" height="200">
+    <h1> 메인 페이지 테스트3</h1>
+    
+    
 </body>
 
 </html>
