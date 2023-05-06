@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open hello.jsp",
-            "file": "localhost\\hello.jsp"
+            "file": "localhost\\main\\main.jsp"
         }
     ]
 }
