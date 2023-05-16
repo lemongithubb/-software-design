@@ -1,26 +1,27 @@
 "use strict";
 
-function login_check(){
-    var id=document.querySelector('#id');
-    var pw=document.querySelector('#pw');
+function input_check(){
+    var id=document.getElementById('id');
+    var pw=document.getElementById('pw');
+
+    const id_element=document.getElementById("idError");
+    const pw_element= document.getElementById("pwError");
 
     if(id.value==""){
-        document.getElementById("idError").innerHTML="아이디를 입력하세요"
-        check=false
+        id_element.innerHTML="아이디를 입력하세요";
+       
     }
     else if(pw.value==""){
-        document.getElementById("pwError").innerHTML="비밀번호를 입력하세요"
-        check=false
+        pw_element.innerHTML="비밀번호를 입력하세요";
+        
     }else{
-        document.getElementById("idError").innerHTML=""
-        document.getElementById("pwError").innerHTML=""
+       id_element.innerHTML="";
+        pw_element.innerHTML="";
     }
 
 }
 function login(){
+    input_check();
 
-}
-
-function register(){
 
 }

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원 메인</title>
+    <script src="js/main.js"></script>
     <style>
         * {
             text-decoration: none;
@@ -51,6 +52,11 @@
             margin-left: 5px;
             float: right;
         }
+        .menu>li>button{
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
 
         body {
             height: 100vh;
@@ -72,18 +78,19 @@
             </h1>
 
             <ul class="menu">
-                <li><a href="https://www.naver.com">
-                        <img src="img/category.png" alt="category" /></a>
-                </li>
-                <li><a href="https://www.naver.com">
-                        <img src="img/upload.png" alt="upload" /></a>
-                </li>
-                <li><a href="https://www.naver.com">
-                        <img src="img/delete.png" alt="delete" /></a>
-                </li>
-                <li><a href="login.html">  
-                        <img src="img/login.png" alt="login" /></a>
-                </li>
+                <li>
+                    <button type="button" onclick="non_member();" class="btm_event"><img src="img/category.png" alt="category" class="btm"></button>
+            </li>
+            <li>
+                    <button type="button" onclick="non_member();" class="btm_event"><img src="img/upload.png" alt="upload" class="btm"></button>
+            </li>
+            <li>
+                    <button type="button" onclick="non_member();" class="btm_event"><img src="img/delete.png" alt="delete" class="btm"></button>
+            </li>
+            <li>
+                    <button type="button" onclick="goto_nonmem_main();" class="btm_event"><img src="img/logout.png" alt="logout" class="btm"></button>
+
+            </li>
             </ul>
 
         </header>

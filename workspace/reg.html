@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원가입</title>
-    <script src="js/fun.js"></script>
+    <script src="js/reg.js"></script>
     <link rel="stylesheet" href="css/font.css">
     <style>
         * {
@@ -14,8 +14,6 @@
             list-style: none;
             padding: 0;
             margin: 0;
-
-
         }
 
         header {
@@ -52,18 +50,23 @@
             color: black;
             text-align: center;
             font-family: 'font';
-            margin-bottom: 50px;
+            margin-bottom: 20px;
         }
 
-        .container>input {
+        .textB {
             font-size: 15px;
             width: 50%;
             height: 50px;
             padding: 0 10px;
             box-sizing: border-box;
             margin-left: 125px;
-            margin-bottom: 20px;
+            margin-top: 30px;
 
+        }
+        .error{
+            font-size: 15px;
+            color: red;
+            margin-left: 125px;
         }
 
         .container>button {
@@ -80,7 +83,7 @@
 <body>
     <header>
         <h1>
-            <a href="main.html">
+            <a href="nl_main.html">
                 <img src="img/title.png" width="350" height="100" alt="logo" />
             </a>
 
@@ -90,14 +93,35 @@
         <h2>
             회원가입
         </h2>
-
-        <input type="text" placeholder="아이디" name="userID" maxlength="20">
-        <input type="text" placeholder="비밀번호" name="userPW" maxlength="20">
-        <input type="text" placeholder="비밀번호 확인" name="userPW" maxlength="20">
-
-        <button type="button"  class="btm_event"><img src="img/reg_k.png" alt="회원가입" class="btm"></button>
-
-
+        <div class="id">
+            <input type="text" class="textB" id="id" placeholder="아이디" name="userID" maxlength="20">
+            <div id="idError" class="error"></div>
+        </div>
+        <div class="pw">
+            <input type="text" class="textB" id="pw"placeholder="비밀번호" name="userPW" maxlength="20">
+            <div id="pwError" class="error"></div>
+        </div>
+        <div class="pwck">
+            <input type="text" class="textB" id="pwck" placeholder="비밀번호 확인" name="userPW" maxlength="20">
+            <div id="pwckError" class="error"></div>
+        </div>
+        <button type="button" onclick="reg();" class="btm_event"><img src="img/reg_k.png" alt="회원가입" class="btm"></button>
+    </div>
+    <div class="img_set">
+        <ul>
+            <li>
+                <a href="post.html"><span class="post1"><img src="img/test.PNG" alt="사진"><em>Category</em>></span></a>
+            </li>
+            <li>
+                <a href="post.html"><span class="post1"><img src="img/test.PNG" alt="사진"><em>Category</em>></span></a>
+            </li>
+            <li>
+                <a href="post.html"><span class="post1"><img src="img/test.PNG" alt="사진"><em>Category</em>></span></a>
+            </li>
+            <li>
+                <a href="post.html"><span class="post1"><img src="img/test.PNG" alt="사진"><em>Category</em>></span></a>
+            </li>
+        </ul>
     </div>
 </body>
 

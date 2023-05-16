@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>비회원 메인</title>
+    <script src="js/main.js"></script>
     <style>
         * {
             text-decoration: none;
             list-style: none;
             padding: 0;
             margin: 0;
-
         }
 
         .container {
@@ -47,9 +47,14 @@
             height: 77px;
             display: flex;
             margin-top: 13px;
+            
 
             margin-left: 5px;
             float: right;
+        }
+        .menu>li>button{
+            border: none;
+            background-color: rgba(255, 255, 255, 0);
         }
 
         body {
@@ -57,7 +62,40 @@
             background: url("img/back.png") no-repeat;
             background-color: white;
             background-size: cover;
+           
         }
+        
+        .img_container{
+            text-align: center;
+            margin: 0 auto;
+        }
+        .img_set{
+            background-color: white;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+            display: inline-block;
+            background-size: cover;
+            width: 1500px;
+            height: 900px;
+
+        }
+        
+        .img_set ul{
+            border-bottom: 1px;
+            *zoom: 1;
+            
+
+        }
+        .img_set li{
+            float: left;
+            width: 300px;
+            height: 300px;
+            padding: 0px 0px;
+            margin-bottom: 0px;
+            border-bottom: 0px;
+        }
+
     </style>
 </head>
 
@@ -72,22 +110,52 @@
             </h1>
 
             <ul class="menu">
-                <li><a href="https://www.naver.com">
-                        <img src="img/category.png" alt="category" /></a>
+                <li>
+                        <button type="button" onclick="non_member();" class="btm_event"><img src="img/category.png" alt="category" class="btm"></button>
                 </li>
-                <li><a href="https://www.naver.com">
-                        <img src="img/upload.png" alt="upload" /></a>
+                <li>
+                        <button type="button" onclick="non_member();" class="btm_event"><img src="img/upload.png" alt="upload" class="btm"></button>
                 </li>
-                <li><a href="https://www.naver.com">
-                        <img src="img/delete.png" alt="delete" /></a>
+                <li>
+                        <button type="button" onclick="non_member();" class="btm_event"><img src="img/delete.png" alt="delete" class="btm"></button>
                 </li>
-                <li><a href="login.html">
-                        <img src="img/login.png" alt="login" /></a>
+                <li>
+                        <button type="button" onclick="goto_login();" class="btm_event"><img src="img/login.png" alt="login" class="btm"></button>
+    
                 </li>
+                
             </ul>
 
         </header>
+        <div class="img_container">
+            <div class="img_set">
+                <ul>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" height="300px" width="300"></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" height="300px" width="300"></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" height="300px" width="300"></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" height="300px" width="300"></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" height="300px" width="300"></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" height="300px" width="300"></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" height="300px" width="300"></span></a>
+                    </li>
+                </ul>
+            </div>
 
+        </div>
+        
     </div>
 </body>
 
