@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>회원 메인</title>
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/css.css">
     <style>
         * {
             text-decoration: none;
             list-style: none;
             padding: 0;
             margin: 0;
-
         }
 
         .container {
@@ -48,6 +48,7 @@
             height: 77px;
             display: flex;
             margin-top: 13px;
+            
 
             margin-left: 5px;
             float: right;
@@ -57,17 +58,93 @@
             background-color: rgba(255, 255, 255, 0);
         }
 
-
         body {
             height: 100vh;
             background: url("img/back.png") no-repeat;
             background-color: white;
             background-size: cover;
+           
         }
+        
+        .img_container{
+            text-align: center;
+            margin: 0 auto;
+        }
+        .img_set{
+            background-color: white;
+            margin-top: 40px;
+            margin-bottom: 20px;
+
+            display: inline-block;
+            background-size: cover;
+            width: 1500px;
+            height: 900px;
+
+        }
+        
+        .img_set ul{
+            border-bottom: 1px;
+            *zoom: 1;
+            
+
+        }
+        .img_set li{
+            float: left;
+            width: 300px;
+            height: 300px;
+            padding: 0px 0px;
+            margin-bottom: 0px;
+            border-bottom: 0px;
+           
+            object-position: 50% 50%;
+            overflow: hidden;
+        }
+        .img_set li img{
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;
+        }
+        .page{
+            margin-top: 6px;
+            margin-bottom: 20px;
+            border-bottom: 20px;
+            text-align: center;
+            font-size: 0;
+        }
+        .page a{
+            display: inline-block;
+            width: 32px;
+            height: 32px; 
+            box-sizing: border-box;
+            vertical-align: middle;
+            border: 1px solid #ddd;
+            line-height: 100%;
+            border-left: 0;   
+           background-color: white;
+           color: black;
+           
+           
+        }
+        .page a.bt{
+            padding-top: 5px;
+            font-size: 1.2rem;
+
+        }
+        .page a.num{
+            padding-top: 5px;
+            font-size: 1.4rem;
+
+        }
+        .page a:first-child{
+            border-left: 1px solid #ddd;
+        }
+
     </style>
 </head>
 
 <body>
+    
+  
     <div class="container">
         <header id="topMenu">
             <h1>
@@ -94,7 +171,45 @@
             </ul>
 
         </header>
+        <div class="img_container">
+            <div class="img_set">
+                <ul>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG"  alt="사진"></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test_ah.png" alt="사진" ></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test_uta.png" alt="사진" ></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test_mg.jpg" alt="사진"></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" ></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test_uta.png" alt="사진" ></span></a>
+                    </li>
+                    <li>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" ></span></a>
+                    </li>
+                </ul>
+            </div>
 
+        </div>
+        <div class="page">
+            <a href="#" class="bt fitst"><<</a>
+            <a href="#" class="bt prev"><</a>
+            <a href="#" class="num">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="num">4</a>
+            <a href="#" class="num">5</a>
+            <a href="#" class="bt next">></a>
+            <a href="#" class="bt last">>></a>
+        </div>
     </div>
 </body>
 

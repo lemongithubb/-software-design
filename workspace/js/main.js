@@ -15,3 +15,13 @@ function goto_nonmem_main(){
     location.replace("nl_main.html");
 
 }
+function Compoenet(){
+    if(user==1){
+        return <p>test.html</p>
+    }else{
+        return null;
+    }
+}
+function test(){
+    alert("기능 성공");
+}
