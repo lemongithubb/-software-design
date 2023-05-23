@@ -1,7 +1,5 @@
 "use strict";
 
-import { veiw_mem } from "../datas/server";
-
 
 
 
