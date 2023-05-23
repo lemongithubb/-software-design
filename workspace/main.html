@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>회원 메인</title>
-    
+    <title>메인 화면</title>
+
     <style>
         * {
             text-decoration: none;
@@ -25,7 +25,7 @@
             height: 100px;
             /*흰 색 높이*/
             background-color: white;
-           
+
         }
 
         #topMenu h1 {
@@ -47,12 +47,13 @@
             height: 77px;
             display: flex;
             margin-top: 13px;
-            
+
 
             margin-left: 5px;
             float: right;
         }
-        .menu>li>button{
+
+        .menu>li>button {
             border: none;
             background-color: rgba(255, 255, 255, 0);
         }
@@ -62,14 +63,15 @@
             background: url("img/back.png") no-repeat;
             background-color: white;
             background-size: cover;
-           
+
         }
-        
-        .img_container{
+
+        .img_container {
             text-align: center;
             margin: 0 auto;
         }
-        .img_set{
+
+        .img_set {
             background-color: white;
             margin-top: 40px;
             margin-bottom: 20px;
@@ -80,70 +82,76 @@
             height: 900px;
 
         }
-        
-        .img_set ul{
+
+        .img_set ul {
             border-bottom: 1px;
             *zoom: 1;
-            
+
 
         }
-        .img_set li{
+
+        .img_set li {
             float: left;
             width: 300px;
             height: 300px;
             padding: 0px 0px;
             margin-bottom: 0px;
             border-bottom: 0px;
-           
+
             object-position: 50% 50%;
             overflow: hidden;
         }
-        .img_set li img{
+
+        .img_set li img {
             width: 100%;
-            height: 100%; 
+            height: 100%;
             object-fit: cover;
         }
-        .page{
+
+        .page {
             margin-top: 6px;
             margin-bottom: 20px;
             border-bottom: 20px;
             text-align: center;
             font-size: 0;
         }
-        .page a{
+
+        .page a {
             display: inline-block;
             width: 32px;
-            height: 32px; 
+            height: 32px;
             box-sizing: border-box;
             vertical-align: middle;
             border: 1px solid #ddd;
             line-height: 100%;
-            border-left: 0;   
-           background-color: white;
-           color: black;
-           
-           
+            border-left: 0;
+            background-color: white;
+            color: black;
+
+
         }
-        .page a.bt{
+
+        .page a.bt {
             padding-top: 5px;
             font-size: 1.2rem;
 
         }
-        .page a.num{
+
+        .page a.num {
             padding-top: 5px;
             font-size: 1.4rem;
 
         }
-        .page a:first-child{
+
+        .page a:first-child {
             border-left: 1px solid #ddd;
         }
-
     </style>
 </head>
 
 <body>
-    
-  
+
+
     <div class="container">
         <header id="topMenu">
             <h1>
@@ -155,18 +163,27 @@
 
             <ul class="menu">
                 <li>
-                    <button type="button" onclick="non_member();" class="btm_event"><img src="img/category.png" alt="category" class="btm"></button>
-            </li>
-            <li>
-                    <button type="button" onclick="non_member();" class="btm_event"><img src="img/upload.png" alt="upload" class="btm"></button>
-            </li>
-            <li>
-                    <button type="button" onclick="non_member();" class="btm_event"><img src="img/delete.png" alt="delete" class="btm"></button>
-            </li>
-            <li>
-                    <button type="button" onclick="goto_nonmem_main();" class="btm_event"><img src="img/logout.png" alt="logout" class="btm"></button>
+                    <button type="button" onclick="not_make();" class="btm_event"><img src="img/category.png"
+                            alt="category" class="btm"></button>
+                </li>
+                <li>
+                    <button type="button" onclick="goto_upload();" class="btm_event"><img src="img/upload.png"
+                            alt="upload" class="btm"></button>
+                </li>
+                <li>
+                    <button type="button" onclick="not_make();" class="btm_event"><img src="img/delete.png" alt="delete"
+                            class="btm"></button>
+                </li>
+                <li>
+                    <button type="button" onclick="logout();" class="btm_event"><img src="img/logout.png" alt="logout"
+                            class="btm"></button>
 
-            </li>
+                </li>
+                <li>
+                    <button type="button" onclick="goto_login();" class="btm_event"><img src="img/login.png" alt="login"
+                            class="btm"></button>
+
+                </li>
             </ul>
 
         </header>
@@ -174,43 +191,45 @@
             <div class="img_set">
                 <ul>
                     <li>
-                        <a href="view.html"><span class="post"><img src="img/test.PNG"  alt="사진"></span></a>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진"></span></a>
                     </li>
                     <li>
-                        <a href="view.html"><span class="post"><img src="img/test_ah.png" alt="사진" ></span></a>
+                        <a href="view.html"><span class="post"><img src="img/test_ah.png" alt="사진"></span></a>
                     </li>
                     <li>
-                        <a href="view.html"><span class="post"><img src="img/test_hi.png" alt="사진" ></span></a>
+                        <a href="view.html"><span class="post"><img src="img/test_hi.png" alt="사진"></span></a>
                     </li>
                     <li>
                         <a href="view.html"><span class="post"><img src="img/test_mg.jpg" alt="사진"></span></a>
                     </li>
                     <li>
-                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" ></span></a>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진"></span></a>
                     </li>
                     <li>
-                        <a href="view.html"><span class="post"><img src="img/test_hi.png" alt="사진" ></span></a>
+                        <a href="view.html"><span class="post"><img src="img/test_hi.png" alt="사진"></span></a>
                     </li>
                     <li>
-                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진" ></span></a>
+                        <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진"></span></a>
                     </li>
                 </ul>
             </div>
 
         </div>
         <div class="page">
-            <a href="#" class="bt fitst"><<</a>
-            <a href="#" class="bt prev"><</a>
-            <a href="#" class="num">1</a>
-            <a href="#" class="num">2</a>
-            <a href="#" class="num">3</a>
-            <a href="#" class="num">4</a>
-            <a href="#" class="num">5</a>
-            <a href="#" class="bt next">></a>
-            <a href="#" class="bt last">>></a>
+            <a href="#" class="bt fitst">
+                <<< /a>
+                    <a href="#" class="bt prev">
+                        << /a>
+                            <a href="#" class="num">1</a>
+                            <a href="#" class="num">2</a>
+                            <a href="#" class="num">3</a>
+                            <a href="#" class="num">4</a>
+                            <a href="#" class="num">5</a>
+                            <a href="#" class="bt next">></a>
+                            <a href="#" class="bt last">>></a>
         </div>
     </div>
-    <script src="js/main.js"></script>
+    <script src="js/func.js"></script>
 </body>
 
 </html>
