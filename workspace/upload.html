@@ -111,7 +111,7 @@
 
         }
 
-        
+        .container#images_container {}
     </style>
 </head>
 
@@ -149,14 +149,27 @@
         </ul>
     </header>
     <div class="container">
-        
+        <div class="form-group">
+            <input class="form-control form-control-user" type="file" name="product_image" id="product_image"
+                onchange="setThumbnail(event);">
+        </div>
+        <div id="image_container"></div>
 
+        <select name="category">
+            <option value="none">==== 카테고리 ===</option>
+            <option value="korean">개</option>
+            <option value="english">고양이</option>
+            <option value="chinese">파충류</option>
+            <option value="spanish">물고기</option>
+        </select>
 
         <button type="button" class="btm_event"><img src="img/upload.png" alt="upload" class="btm"
                 onclick="upload();"></button>
 
     </div>
-    <script src="js/func.js"></script>
+    <script src="js/upload.js"></script>
+    <script src="js/basic.js"></script>
+    
 
 </body>
 

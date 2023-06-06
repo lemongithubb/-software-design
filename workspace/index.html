@@ -61,7 +61,7 @@
         body {
             height: 100vh;
             background: url("img/back.png") no-repeat;
-            background-color: white;
+            background-color: black;
             background-size: cover;
 
         }
@@ -78,31 +78,42 @@
 
             display: inline-block;
             background-size: cover;
-            width: 1500px;
-            height: 900px;
+            width: 80%;
+           
+            position: relative;
+        }
+        .img_set:after{
+            width: 100%;
+            height: 100%;
 
+            padding-top: 100%
         }
 
         .img_set ul {
             border-bottom: 1px;
             *zoom: 1;
-
-
         }
 
         .img_set li {
             float: left;
-            width: 300px;
-            height: 300px;
+            width: 25%;
+            /*height: 100%;
+            
+            /*
             padding: 0px 0px;
             margin-bottom: 0px;
             border-bottom: 0px;
-
+            
+*/          
+            padding-bottom:calc(width);
+            background-color: black;
             object-position: 50% 50%;
             overflow: hidden;
+            position: relative;
         }
 
         .img_set li img {
+            
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -194,7 +205,7 @@
                         <a href="view.html"><span class="post"><img src="img/test.PNG" alt="사진"></span></a>
                     </li>
                     <li>
-                        <a href="view.html"><span class="post"><img src="img/test_ah.png" alt="사진"></span></a>
+                        <a href="view.html"><span class="post"><img src="img/test_ah.png" width="100%" height="100%" alt="사진"></span></a>
                     </li>
                     <li>
                         <a href="view.html"><span class="post"><img src="img/test_hi.png" alt="사진"></span></a>
@@ -217,9 +228,9 @@
         </div>
         <div class="page">
             <a href="#" class="bt fitst">
-                <<< /a>
+                << </a>
                     <a href="#" class="bt prev">
-                        << /a>
+                        < </a>
                             <a href="#" class="num">1</a>
                             <a href="#" class="num">2</a>
                             <a href="#" class="num">3</a>
@@ -229,7 +240,8 @@
                             <a href="#" class="bt last">>></a>
         </div>
     </div>
-    <script src="js/func.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/basic.js"></script>
 </body>
 
 </html>
